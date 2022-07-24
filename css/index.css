@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+   
+}
+h1 {font-size: 3.5em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{font-size: 1.20em;}
+
+button{
+    font-size: 2.em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0.5px solid rgb(106, 188, 199);
+    box-shadow: 2px 2px 10px rgb(122, 214, 226);
+    color: whitesmoke;
+    background-color: rgb(107, 219, 180);
+    font-size: 1.3em;
+}
+button:hover{
+    background-color: rgb(60, 146, 116);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(177, 247, 223);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(60, 146, 116);
+    font-size: 1.8em;
+    font-family: 'Kanit', sans-serif;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black
+}
+header a:hover{
+    color: whitesmoke;
+}
+#hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient( 
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+
+#acerca-nosotros .container{
+    text-align: center;
+    padding: 200px 12px
+}
+#nuestros-cursos{
+    background-color: rgb(26, 24, 24);
+    color: whitesmoke;
+    text-align: center;
+}
+#nuestros-cursos .container{
+    padding: 100px 0px;
+}
+#nuestros-cursos p{
+    display: none;
+}
+#nuestros-cursos .carta{
+
+}
+.carta:first-child{
+    
+}
+.carta:nth-child(2){
+    
+
+}
+.carta:nth-child(3){
+    
+
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+
+}
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold ;
+}
+#comenzar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: rgb(30,30,30);
+}
+#comenzar h2{
+    font-size: 3em;
+}
+
+
+
+/* --------------footer------------ */
+
+
+
+
+footer{
+   background-color:  rgb(12, 97, 131);
+}
+
+
+
+
+.footer-contenedor{
+    padding-left: 3rem;
+    width: 100%;
+    display: flex;
+   
+    color: white
+    
+}
+
+.etiquetas {
+   margin-top: 2rem;
+    display: block;
+    flex-direction: column;
+   align-items: left;
+   justify-content: center;
+    padding-left: 80px;
+}
+
+
+
+.formulario {
+   
+    width: auto;
+    margin-top: 2rem;
+    display: block;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding-left: 20px;
+}
+
+.logo-final {
+    height: 70px;
+    
+   
+  
+    width:100% ;
+   
+    color: beige;
+    padding-top: 0.4rem;
+    text-align: center;
+
+   
+   
+}
+
+.boton-formulario {
+ display: flex;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0.5px solid rgb(106, 188, 199);
+    box-shadow: 2px 2px 10px rgb(122, 214, 226);
+    color: whitesmoke;
+    background-color: rgb(107, 219, 180);
+    font-size: 0.89em;
+}
+
+
+
+/* --------------footer------------ */
+
+
+@media (min-width: 720px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #acerca-nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #acerca-nosotros .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #acerca-nosotros .img-container{
+        background-image: url("media/codigo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        
+    }
+    #nuestros-cursos .cursos{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-cursos h3{
+        margin: top 0;
+    }
+    #nuestros-cursos .carta{
+        padding: 50px;
+        background-size: 100% 150%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+
+    }
+    #caracteristicas{
+        background-image: url("media/imgp.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+
+    }
+    #caracteristicas .container{
+        text-align: initial;
+    
+
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+
+    }
+}
+@media (min-width: 1100px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+
+    }
+}
